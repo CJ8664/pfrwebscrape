@@ -47,7 +47,7 @@ def savePlayByPlayData(game):
             outputHandle.write(textdata[:-1] + '\n')
 
 def main():
-    years =[str(x + 2000) for x in range(18)]
+    years =[str(x + 1994) for x in range(24)]
     for year in years:
         games = getGames(year)
         for game in games:
